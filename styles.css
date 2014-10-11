@@ -1,3 +1,17 @@
+#title
+{
+  background-color:#FF8939;
+  box-shadow: 0px 0px 2px 2px #C55000;
+  width:100%;
+  text-align:center;
+}
+body
+{
+  background-color:#FFE8D9;
+  background-image:url("background.jpg");
+  background-size:cover;
+  font-size:25px;
+}
 .center
 {
   text-align:center;
@@ -7,4 +21,16 @@ button
 {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 540px) {
+  button
+  {
+    width:100%;
+  }
+}
+h1
+{
+  font-family:Audiowide;
+  font-size:50px;
 }
