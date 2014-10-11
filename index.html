@@ -37,18 +37,18 @@
     <div class = "container center question" id = "one">
       <div class = "col-xs-12">
         <h2> True or False? Animals can sense when an earthquake is approaching. </h2>
-        <button class = "btn btn-default" onclick = "next('two')"> True </button><br>
-        <button class = "btn btn-default" onclick = "next('two')"> False </button><br>
+        <button class = "btn btn-default" onclick = "next('two', 'one')"> True </button><br>
+        <button class = "btn btn-default" onclick = "next('two', 'one')"> False </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "two">
       <div class = "col-xs-12">
         <h2>If you are at the beach, what is a sign of an approaching earthquake or tsunami?</h2>
-        <button class = "btn btn-default" onclick = "next('three')"> The water level begins rising </button><br>
-        <button class = "btn btn-default" onclick = "next('three')"> The water pulls away from the shore </button><br>
-        <button class = "btn btn-default" onclick = "next('three')"> The waves stop </button><br>
-        <button class = "btn btn-default" onclick = "next('three')"> Fish start jumping out of the water </button><br>
+        <button class = "btn btn-default" onclick = "next('three', 'two')"> The water level begins rising </button><br>
+        <button class = "btn btn-default" onclick = "next('three', 'two')"> The water pulls away from the shore </button><br>
+        <button class = "btn btn-default" onclick = "next('three', 'two')"> The waves stop </button><br>
+        <button class = "btn btn-default" onclick = "next('three', 'two')"> Fish start jumping out of the water </button><br>
       </div>
     </div>
 
@@ -61,17 +61,17 @@
         <button class = "btn btn-default" onclick = "next()"> Framed photos </button><br>
         <button class = "btn btn-default" onclick = "next()"> Canned goods </button><br><br>
 
-        <button class = "btn btn-default" onclick = "next('four')"> Next </button><br>
+        <button class = "btn btn-default" onclick = "next('four', 'three')"> Next </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "four">
       <div class = "col-xs-12">
         <h2> What is the recommended amount of water for each person in an emergency kit? </h2>
-        <button class = "btn btn-default" onclick = "next('five')"> One gallon per person per day </button><br>
-        <button class = "btn btn-default" onclick = "next('five')"> Two liters per person per day </button><br>
-        <button class = "btn btn-default" onclick = "next('five')"> One gallon per family (4 people) per day </button><br>
-        <button class = "btn btn-default" onclick = "next('five')"> One liter per person per day </button><br>
+        <button class = "btn btn-default" onclick = "next('five', 'four')"> One gallon per person per day </button><br>
+        <button class = "btn btn-default" onclick = "next('five', 'four')"> Two liters per person per day </button><br>
+        <button class = "btn btn-default" onclick = "next('five', 'four')"> One gallon per family (4 people) per day </button><br>
+        <button class = "btn btn-default" onclick = "next('five', 'four')"> One liter per person per day </button><br>
       </div>
     </div>
 
@@ -85,7 +85,7 @@
         <button class = "btn btn-default" onclick = "next()"> Canned tuna </button><br>
         <button class = "btn btn-default" onclick = "next()"> Cheese </button><br><br>
 
-        <button class = "btn btn-default" onclick = "next('six')"> Next </button><br>
+        <button class = "btn btn-default" onclick = "next('six', 'five')"> Next </button><br>
 
       </div>
     </div>
@@ -93,39 +93,39 @@
     <div class = "container center question" id = "six">
       <div class = "col-xs-12">
         <h2> Where should you hide if you are indoors and an earthquake strikes? </h2>
-          <button class = "btn btn-default" onclick = "next('seven')"> Under a window </button><br>
-          <button class = "btn btn-default" onclick = "next('seven')"> Under a door </button><br>
-          <button class = "btn btn-default" onclick = "next('seven')"> Under a table </button><br>
-          <button class = "btn btn-default" onclick = "next('seven')"> In an elevator </button><br>
+          <button class = "btn btn-default" onclick = "next('seven', 'six')"> Under a window </button><br>
+          <button class = "btn btn-default" onclick = "next('seven', 'six')"> Under a door </button><br>
+          <button class = "btn btn-default" onclick = "next('seven', 'six')"> Under a table </button><br>
+          <button class = "btn btn-default" onclick = "next('seven', 'six')"> In an elevator </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "seven">
       <div class = "col-xs-12">
         <h2> Where should you go if you are outdoors and shaking starts? </h2>
-        <button class = "btn btn-default" onclick = "next('eight')"> Behind a building </button><br>
-        <button class = "btn btn-default" onclick = "next('eight')"> Under a bridge </button><br>
-        <button class = "btn btn-default" onclick = "next('eight')"> Under a tree </button><br>
-        <button class = "btn btn-default" onclick = "next('eight')"> Out in the open </button><br>
+        <button class = "btn btn-default" onclick = "next('eight', 'seven')"> Behind a building </button><br>
+        <button class = "btn btn-default" onclick = "next('eight', 'seven')"> Under a bridge </button><br>
+        <button class = "btn btn-default" onclick = "next('eight', 'seven')"> Under a tree </button><br>
+        <button class = "btn btn-default" onclick = "next('eight', 'seven')"> Out in the open </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "eight">
       <div class = "col-xs-12">
         <h2> What is the best position to hide in? </h2>
-        <button class = "btn btn-default" onclick = "next('nine')"> Laying down with your hands over your face </button><br>
-        <button class = "btn btn-default" onclick = "next('nine')"> On your hands and knees covering your neck and head </button><br>
-        <button class = "btn btn-default" onclick = "next('nine')"> Sitting cross-legged with hands over head </button><br>
-        <button class = "btn btn-default" onclick = "next('nine')"> Laying down with your hands over your stomach </button><br>
+        <button class = "btn btn-default" onclick = "next('nine', 'eight')"> Laying down with your hands over your face </button><br>
+        <button class = "btn btn-default" onclick = "next('nine', 'eight')"> On your hands and knees covering your neck and head </button><br>
+        <button class = "btn btn-default" onclick = "next('nine', 'eight')"> Sitting cross-legged with hands over head </button><br>
+        <button class = "btn btn-default" onclick = "next('nine', 'eight')"> Laying down with your hands over your stomach </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "nine">
       <div class = "col-xs-12">
         <h2> How should you get light if the power is out? </h2>
-        <button class = "btn btn-default" onclick = "next('ten')"> Use a flashlight </button><br>
-        <button class = "btn btn-default" onclick = "next('ten')"> Light a match </button><br>
-        <button class = "btn btn-default" onclick = "next('ten')"> Set off flares </button><br>
+        <button class = "btn btn-default" onclick = "next('ten', 'nine')"> Use a flashlight </button><br>
+        <button class = "btn btn-default" onclick = "next('ten', 'nine')"> Light a match </button><br>
+        <button class = "btn btn-default" onclick = "next('ten', 'nine')"> Set off flares </button><br>
       </div>
     </div>
 
@@ -137,17 +137,17 @@
         <button class = "btn btn-default" onclick = "next()"> No one </button><br>
         <button class = "btn btn-default" onclick = "next()"> Emergency personnel if needed </button><br>
         <button class = "btn btn-default" onclick = "next()"> Anyone you want </button><br><br>
-        <button class = "btn btn-default" onclick = "next('eleven')"> Next </button><br>
+        <button class = "btn btn-default" onclick = "next('eleven', 'ten')"> Next </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "eleven">
       <div class = "col-xs-12">
         <h2> What should you wear when cleaning after an earthquake? </h2>
-        <button class = "btn btn-default" onclick = "next("twelve")"> A hazmat suit </button><br>
-        <button class = "btn btn-default" onclick = "next("twelve")"> Long sleeves and pants with sturdy shoes </button><br>
-        <button class = "btn btn-default" onclick = "next("twelve")"> Flip flops and an old t-shirt </button><br>
-        <button class = "btn btn-default" onclick = "next("twelve")"> Coveralls and boots </button><br>
+        <button class = "btn btn-default" onclick = "next('twelve', 'eleven')"> A hazmat suit </button><br>
+        <button class = "btn btn-default" onclick = "next('twelve', 'eleven')"> Long sleeves and pants with sturdy shoes </button><br>
+        <button class = "btn btn-default" onclick = "next('twelve', 'eleven')"> Flip flops and an old t-shirt </button><br>
+        <button class = "btn btn-default" onclick = "next('twelve', 'eleven')"> Coveralls and boots </button><br>
       </div>
     </div>
 
@@ -158,17 +158,17 @@
         <button class = "btn btn-default" onclick = "next()"> Electrical </button><br>
         <button class = "btn btn-default" onclick = "next()"> Internet </button><br>
         <button class = "btn btn-default" onclick = "next()"> Water and sewage </button><br><br>
-        <button class = "btn btn-default" onclick = "next("thirteen")"> Next </button><br>
+        <button class = "btn btn-default" onclick = "next('thirteen', 'twelve')"> Next </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "thirteen">
       <div class = "col-xs-12">
         <h2> How long can fridge power be off before food is unsafe to eat? </h2>
-        <button class = "btn btn-default" onclick = "next('finish')"> 4 hours </button><br>
-        <button class = "btn btn-default" onclick = "next('finish')"> 2 hours </button><br>
-        <button class = "btn btn-default" onclick = "next('finish')"> 6 hours </button><br>
-        <button class = "btn btn-default" onclick = "next('finish')"> 8 hours </button><br>
+        <button class = "btn btn-default" onclick = "next('finish', 'thirteen')"> 4 hours </button><br>
+        <button class = "btn btn-default" onclick = "next('finish', 'thirteen')"> 2 hours </button><br>
+        <button class = "btn btn-default" onclick = "next('finish', 'thirteen')"> 6 hours </button><br>
+        <button class = "btn btn-default" onclick = "next('finish', 'thirteen')"> 8 hours </button><br>
       </div>
     </div>
 
@@ -188,11 +188,13 @@
         $("#one").show();
         console.log("Showing question one...done");
       }
-      function next(x)
+      function next(x, y)
       {
-        var _string = "#" + x;
-        console.log("Panel," + _string);
-        $(_string).show();
+        var _show = "#" + x;
+        var _hide = "#" + y;
+
+        $(_hide).hide();
+        $(_show).show();
       }
     </script>
   </body>
