@@ -4,6 +4,7 @@
     <link href="bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
@@ -17,7 +18,7 @@
       <div class = "col-xs-12"><br>
         <h2>Are you ready for "The Big One"? Take this quiz to see how ready you are for an earthquake and
           learn how to prepare, what to do in during an earthquake, and how to pick up the pieces when the
-          shaking stops.</h2><br>
+          shaking stops.<br><br> Some questions may have more than one correct answer.</h2><br>
         <button class = "btn btn-default" onclick = "start_game()"> Let's Start! </button><br>
       </div>
     </div>
@@ -42,7 +43,7 @@
 
     <div class = "container center question" id = "three">
       <div class = "col-xs-12"><br>
-        <h2>Which of the following could be stored in low cabinets with latches?</h2><br>
+        <h2>Which of the following should be stored in low cabinets with latches?</h2><br>
         <button class = "btn btn-default" onclick = "next('four', 'three', 0)"> Glass bottles </button><br>
         <button class = "btn btn-default" onclick = "next('four', 'three', 0)"> Pesticides </button><br>
         <button class = "btn btn-default" onclick = "next('four', 'three', 0)"> China dishes </button><br>
@@ -58,7 +59,7 @@
         <h2> What is the recommended amount of water for each person in an emergency kit? </h2><br>
         <button class = "btn btn-default" onclick = "next('five', 'four', 0)"> One gallon per person per day </button><br>
         <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> Two liters per person per day </button><br>
-        <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> One gallon per family (4 people) per day </button><br>
+        <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> Two gallons per family per day </button><br>
         <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> One liter per person per day </button><br>
 
         <a target = "blank" href = "http://emergency.cdc.gov/disasters/earthquakes/food.asp"> Building an emergency kit </a>
@@ -68,12 +69,12 @@
     <div class = "container center question" id = "five">
       <div class = "col-xs-12"><br>
         <h2> Which food should not go into an emergency kit? </h2><br>
-        <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> Beef jerky </button><br>
-        <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> Canned green beans </button><br>
-        <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Fresh fruit </button><br>
-        <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> SPAM </button><br>
-        <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> Canned tuna </button><br>
-        <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Cheese </button><br><br>
+        <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Beef jerky </button><br>
+        <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Canned green beans </button><br>
+        <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> Fresh fruit </button><br>
+        <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> SPAM </button><br>
+        <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Canned tuna </button><br>
+        <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> Cheese </button><br><br>
 
         <a target = "blank" href = "http://emergency.cdc.gov/disasters/earthquakes/food.asp"> What food stays safe? </a>
       </div>
@@ -170,11 +171,13 @@
         <br>
         <h2> Do you feel prepared? </h2>
         <text id = "final_score"> </text>
-        <h2> It's important to be ready when disaster strikes, even if you think it will never happen to you. Make sure that you're
-              ready for whatever hits and prepare for other natural disasters
+        <h2> It's important to be ready when disaster strikes, even if you think it will never happen to you. Make sure that you're ready for whatever hits and prepare for other natural disasters.</h2> <br>
+
+          <button class = "btn btn-default" onclick = "start_game()"> Play Again </button>
       </div>
     </div>
 
+    <div id = "foot" style = "font-size:15px;"><text>Built for the International Women's Hackathon 2014</text><a href = "http://virtualinfinity.io"><br> by Virtual Infinity</a></div>
   </div>
 
     <script src = "jquery-2.1.1.js"></script>
@@ -184,13 +187,13 @@
       $(document).ready(function()
       {
         $(".question").hide();
-        console.log("Hiding questions...done");
       });
       function start_game()
       {
+        _total = 0;
         $("#introduction").hide();
+        $("#finish").hide();
         $("#one").show();
-        console.log("Showing question one...done");
       }
       function next(x, y, z)
       {
