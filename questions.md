@@ -12,6 +12,11 @@ shaking stops.
   * True
   * False
 
+* If you are at the beach, what is a sign of an approaching earthquake or tsunami?
+
+  * The water level begins rising
+  * The water pulls away from the shore
+
 
 * Which of the following should be stored in low cabinets with latches?
 
