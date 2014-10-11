@@ -2,3 +2,15 @@
 {
   text-align:center;
 }
+
+body
+{
+  background-image:url("background.jpg");
+  background-size:cover;
+}
+
+button
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

@@ -1391,23 +1391,27 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 768px) {
   .container {
+    padding-right: 15px;
+    padding-left: 15px;
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   .container {
+    padding-right: 15px;
+    padding-left: 15px;
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .container {
+    padding-right: 15px;
+    padding-left: 15px;
     width: 1170px;
   }
 }
@@ -2723,7 +2727,7 @@ select[multiple].input-lg {
 .btn {
   display: inline-block;
   padding: 6px 12px;
-  margin-bottom: 0;
+  margin-bottom: 10;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -2736,8 +2740,8 @@ select[multiple].input-lg {
       -ms-user-select: none;
           user-select: none;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  border: 1px transparent;
+  border-radius: 10px;
   min-width:50%;
 }
 .btn:focus,
@@ -2771,7 +2775,7 @@ fieldset[disabled] .btn {
 }
 .btn-default {
   color: #333;
-  background-color: #fff;
+  background-color: rgba(220, 220, 200, .7);
   border-color: #ccc;
 }
 .btn-default:hover,
@@ -3771,6 +3775,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
+  margin-top: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -3850,7 +3855,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-static-top {
-    border-radius: 0;
+    border-radius: 15;
   }
 }
 .navbar-fixed-top,
@@ -3867,6 +3872,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
+
   }
 }
 .navbar-fixed-top {
@@ -3904,8 +3910,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  border: none;
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -4189,8 +4194,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: rgba(220, 220, 200, .7);
 }
 .navbar-inverse .navbar-brand {
   color: #777;
