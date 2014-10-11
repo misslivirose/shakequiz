@@ -16,7 +16,8 @@ shaking stops.
 
   * The water level begins rising
   * The water pulls away from the shore
-
+  * The waves stop
+  * Fish start jumping out of the water
 
 * Which of the following should be stored in low cabinets with latches?
 
@@ -84,7 +85,7 @@ shaking stops.
   * Your friends
   * No one
   * Emergency personnel if needed
-  * Any of the above
+  * Anyone you want
 
 
 * What should you wear when cleaning after an earthquake?

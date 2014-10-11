@@ -28,18 +28,141 @@
         <h2>Are you ready for "The Big One"? Take this quiz to see how ready you are for an earthquake and
           learn how to prepare, what to do in during an earthquake, and how to pick up the pieces when the
           shaking stops.</h2>
-        <button class = "btn btn-default" onclick = "start_game"> Let's Start! </button>
+        <button class = "btn btn-default" onclick = "start_game()"> Let's Start! </button>
       </div>
     </div>
 
-    <div class = "container center" id = "question" data-value = "1">
+    <div class = "container center question" id = "one">
       <div class = "col-xs-12">
-        <h2>Are you ready for "The Big One"? Take this quiz to see how ready you are for an earthquake and
-          learn how to prepare, what to do in during an earthquake, and how to pick up the pieces when the
-          shaking stops.</h2>
-        <button class = "btn btn-default" onclick = "next"> Next </button>
+        <h2> True or False? Animals can sense when an earthquake is approaching. </h2>
+        <button data-value = "one" class = "btn btn-default" onclick = "next()"> True </button>
+        <button class = "btn btn-default" onclick = "next()"> False </button>
       </div>
     </div>
+
+    <div class = "container center question" id = "two">
+      <div class = "col-xs-12">
+        <h2>If you are at the beach, what is a sign of an approaching earthquake or tsunami?</h2>
+        <button class = "btn btn-default" onclick = "next()"> The water level begins rising </button>
+        <button class = "btn btn-default" onclick = "next()"> The water pulls away from the shore </button>
+        <button class = "btn btn-default" onclick = "next()"> The waves stop </button>
+        <button class = "btn btn-default" onclick = "next()"> Fish start jumping out of the water </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "three">
+      <div class = "col-xs-12">
+        <h2>Which of the following should be stored in low cabinets with latches?</h2>
+        <button class = "btn btn-default" onclick = "next()"> Glass bottles </button>
+        <button class = "btn btn-default" onclick = "next()"> Pesticides </button>
+        <button class = "btn btn-default" onclick = "next()"> China dishes </button>
+        <button class = "btn btn-default" onclick = "next()"> Framed photos </button>
+        <button class = "btn btn-default" onclick = "next()"> Canned goods </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "four">
+      <div class = "col-xs-12">
+        <h2> What is the recommended amount of water for each person in an emergency kit? </h2>
+        <button class = "btn btn-default" onclick = "next()"> One gallon per person per day </button>
+        <button class = "btn btn-default" onclick = "next()"> Two liters per person per day </button>
+        <button class = "btn btn-default" onclick = "next()"> One gallon per family (4 people) per day </button>
+        <button class = "btn btn-default" onclick = "next()"> One liter per person per day </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "five">
+      <div class = "col-xs-12">
+        <h2> Which foods could go into an emergency kit? </h2>
+        <button class = "btn btn-default" onclick = "next()"> Beef jerky </button>
+        <button class = "btn btn-default" onclick = "next()"> Canned green beans </button>
+        <button class = "btn btn-default" onclick = "next()"> Fresh fruit </button>
+        <button class = "btn btn-default" onclick = "next()"> SPAM </button>
+        <button class = "btn btn-default" onclick = "next()"> Canned tuna </button>
+        <button class = "btn btn-default" onclick = "next()"> Cheese </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "six">
+      <div class = "col-xs-12">
+        <h2> Where should you hide if you are indoors and an earthquake strikes? </h2>
+          <button class = "btn btn-default" onclick = "next()"> Under a window </button>
+          <button class = "btn btn-default" onclick = "next()"> Under a door </button>
+          <button class = "btn btn-default" onclick = "next()"> Under a table </button>
+          <button class = "btn btn-default" onclick = "next()"> In an elevator </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "seven">
+      <div class = "col-xs-12">
+        <h2> Where should you go if you are outdoors and shaking starts? </h2>
+        <button class = "btn btn-default" onclick = "next()"> Behind a building </button>
+        <button class = "btn btn-default" onclick = "next()"> Under a bridge </button>
+        <button class = "btn btn-default" onclick = "next()"> Under a tree </button>
+        <button class = "btn btn-default" onclick = "next()"> Out in the open </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "eight">
+      <div class = "col-xs-12">
+        <h2> What is the best position to hide in? </h2>
+        <button class = "btn btn-default" onclick = "next()"> Laying down with your hands over your face </button>
+        <button class = "btn btn-default" onclick = "next()"> On your hands and knees covering your neck and head </button>
+        <button class = "btn btn-default" onclick = "next()"> Sitting cross-legged with hands over head </button>
+        <button class = "btn btn-default" onclick = "next()"> Laying down with your hands over your stomach </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "nine">
+      <div class = "col-xs-12">
+        <h2> How should you get light if the power is out? </h2>
+        <button class = "btn btn-default" onclick = "next()"> Use a flashlight </button>
+        <button class = "btn btn-default" onclick = "next()"> Light a match </button>
+        <button class = "btn btn-default" onclick = "next()"> Set off flares </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "ten">
+      <div class = "col-xs-12">
+        <h2>  Who should you call immediately after the shaking stops? </h2>
+        <button class = "btn btn-default" onclick = "next()"> Your family </button>
+        <button class = "btn btn-default" onclick = "next()"> Your friends </button>
+        <button class = "btn btn-default" onclick = "next()"> No one </button>
+        <button class = "btn btn-default" onclick = "next()"> Emergency personnel if needed </button>
+        <button class = "btn btn-default" onclick = "next()"> Anyone you want </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "eleven">
+      <div class = "col-xs-12">
+        <h2> What should you wear when cleaning after an earthquake? </h2>
+        <button class = "btn btn-default" onclick = "next()"> A hazmat suit </button>
+        <button class = "btn btn-default" onclick = "next()"> Long sleeves and pants with sturdy shoes </button>
+        <button class = "btn btn-default" onclick = "next()"> Flip flops and an old t-shirt </button>
+        <button class = "btn btn-default" onclick = "next()"> Coveralls and boots </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "twelve">
+      <div class = "col-xs-12">
+        <h2> Which utilities should you be careful with checking for damage? </h2>
+        <button class = "btn btn-default" onclick = "next()"> Gas lines </button>
+        <button class = "btn btn-default" onclick = "next()"> Electrical </button>
+        <button class = "btn btn-default" onclick = "next()"> Internet </button>
+        <button class = "btn btn-default" onclick = "next()"> Water and sewage </button>
+      </div>
+    </div>
+
+    <div class = "container center question" id = "thirteen">
+      <div class = "col-xs-12">
+        <h2> How long can fridge power be off before food is unsafe to eat? </h2>
+        <button class = "btn btn-default" onclick = "next()"> 4 hours </button>
+        <button class = "btn btn-default" onclick = "next()"> 2 hours </button>
+        <button class = "btn btn-default" onclick = "next()"> 6 hours </button>
+        <button class = "btn btn-default" onclick = "next()"> 8 hours </button>
+      </div>
+    </div>
+
   </div>
 
     <script src = "jquery-2.1.1.js"></script>
@@ -47,11 +170,19 @@
     <script type = "text/javascript">
       $(document).ready(function()
       {
-        $("#question").hide();
+        $(".question").hide();
+        console.log("Hiding questions...done");
       });
       function start_game()
       {
-        $("#question").show();
+        $("#introduction").hide();
+        $("#one").show();
+        console.log("Showing question one...done");
+      }
+      function next()
+      {
+        $("#one").hide();
+        $("#two").show();
       }
     </script>
   </body>
