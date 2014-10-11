@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="bootstrap.css" rel="stylesheet">
+    <link href="jquery-ui.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
@@ -10,30 +11,28 @@
   </head>
   <body>
     <div class="container" id="title">
-      <div class = "col-xs-12">
-        <h1> SHAKE! </h1>
-      </div>
+      <h1 id = "head_text"> SHAKE! </h1>
     </div>
     <div class = "container center" id = "introduction">
       <div class = "col-xs-12"><br>
         <h2>Are you ready for "The Big One"? Take this quiz to see how ready you are for an earthquake and
           learn how to prepare, what to do in during an earthquake, and how to pick up the pieces when the
           shaking stops.<br><br> Some questions may have more than one correct answer.</h2><br>
-        <button class = "btn btn-default" onclick = "start_game()"> Let's Start! </button><br>
+        <button id = "b1" class = "btn btn-default" onclick = "start_game()"> Let's Start! </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "one">
-      <div class = "col-xs-12"><br>
-        <h2> True or False? Animals can sense when an earthquake is approaching. </h2><br>
+      <div class = "col-xs-12">
+        <h2> True or False? Animals can sense when an earthquake is approaching. </h2>
         <button class = "btn btn-default" onclick = "next('two', 'one', 0)"> True </button><br>
         <button class = "btn btn-default" onclick = "next('two', 'one', 1)"> False </button><br>
       </div>
     </div>
 
     <div class = "container center question" id = "two">
-      <div class = "col-xs-12"><br>
-        <h2>If you are at the beach, what is a sign of an approaching earthquake or tsunami?</h2><br>
+      <div class = "col-xs-12">
+        <h2>If you are at the beach, what is a sign of an approaching earthquake or tsunami?</h2>
         <button class = "btn btn-default" onclick = "next('three', 'two', 1)"> The water level begins rising </button><br>
         <button class = "btn btn-default" onclick = "next('three', 'two', 0)"> The water pulls away from the shore </button><br>
         <button class = "btn btn-default" onclick = "next('three', 'two', 1)"> The waves stop </button><br>
@@ -42,38 +41,37 @@
     </div>
 
     <div class = "container center question" id = "three">
-      <div class = "col-xs-12"><br>
-        <h2>Which of the following should be stored in low cabinets with latches?</h2><br>
+      <div class = "col-xs-12">
+        <h2>Which of the following should be stored in low cabinets with latches?</h2>
         <button class = "btn btn-default" onclick = "next('four', 'three', 0)"> Glass bottles </button><br>
         <button class = "btn btn-default" onclick = "next('four', 'three', 0)"> Pesticides </button><br>
         <button class = "btn btn-default" onclick = "next('four', 'three', 0)"> China dishes </button><br>
         <button class = "btn btn-default" onclick = "next('four', 'three', 1)"> Framed photos </button><br>
-        <button class = "btn btn-default" onclick = "next('four', 'three', 1)"> Canned goods </button><br>
+        <button class = "btn btn-default" onclick = "next('four', 'three', 1)"> Canned goods </button><br><br>
 
         <a target = "blank" href = "http://emergency.cdc.gov/disasters/earthquakes/inspecting.asp"> How do I secure my home? </a>
       </div>
     </div>
 
     <div class = "container center question" id = "four">
-      <div class = "col-xs-12"><br>
-        <h2> What is the recommended amount of water for each person in an emergency kit? </h2><br>
+      <div class = "col-xs-12">
+        <h2> What is the recommended amount of water for each person in an emergency kit? </h2>
         <button class = "btn btn-default" onclick = "next('five', 'four', 0)"> One gallon per person per day </button><br>
         <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> Two liters per person per day </button><br>
         <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> Two gallons per family per day </button><br>
-        <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> One liter per person per day </button><br>
+        <button class = "btn btn-default" onclick = "next('five', 'four', 1)"> One liter per person per day </button><br><br>
 
         <a target = "blank" href = "http://emergency.cdc.gov/disasters/earthquakes/food.asp"> Building an emergency kit </a>
       </div>
     </div>
 
     <div class = "container center question" id = "five">
-      <div class = "col-xs-12"><br>
-        <h2> Which food should not go into an emergency kit? </h2><br>
+      <div class = "col-xs-12">
+        <h2> Which food should not go into an emergency kit? </h2>
         <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Beef jerky </button><br>
         <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Canned green beans </button><br>
         <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> Fresh fruit </button><br>
         <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> SPAM </button><br>
-        <button class = "btn btn-default" onclick = "next('six', 'five', 1)"> Canned tuna </button><br>
         <button class = "btn btn-default" onclick = "next('six', 'five', 0)"> Cheese </button><br><br>
 
         <a target = "blank" href = "http://emergency.cdc.gov/disasters/earthquakes/food.asp"> What food stays safe? </a>
@@ -81,32 +79,32 @@
     </div>
 
     <div class = "container center question" id = "six">
-      <div class = "col-xs-12"><br>
-        <h2> Where should you hide if you are indoors and an earthquake strikes? </h2><br>
+      <div class = "col-xs-12">
+        <h2> Where should you hide if you are indoors and an earthquake strikes? </h2>
           <button class = "btn btn-default" onclick = "next('seven', 'six', 1)"> Under a window </button><br>
           <button class = "btn btn-default" onclick = "next('seven', 'six', 1)"> Under a door </button><br>
           <button class = "btn btn-default" onclick = "next('seven', 'six', 0)"> Under a table </button><br>
-          <button class = "btn btn-default" onclick = "next('seven', 'six', 1)"> In an elevator </button><br>
+          <button class = "btn btn-default" onclick = "next('seven', 'six', 1)"> In an elevator </button><br><br>
 
           <a target = "blank" href = "http://emergency.cdc.gov/disasters/earthquakes/during.asp"> Staying Safe Indoors </a>
       </div>
     </div>
 
     <div class = "container center question" id = "seven">
-      <div class = "col-xs-12"><br>
-        <h2> Where should you go if you are outdoors and shaking starts? </h2><br>
+      <div class = "col-xs-12">
+        <h2> Where should you go if you are outdoors and shaking starts? </h2>
         <button class = "btn btn-default" onclick = "next('eight', 'seven', 1)"> Behind a building </button><br>
         <button class = "btn btn-default" onclick = "next('eight', 'seven', 1)"> Under a bridge </button><br>
         <button class = "btn btn-default" onclick = "next('eight', 'seven', 1)"> Under a tree </button><br>
-        <button class = "btn btn-default" onclick = "next('eight', 'seven', 0)"> Out in the open </button><br>
+        <button class = "btn btn-default" onclick = "next('eight', 'seven', 0)"> Out in the open </button><br><br>
 
         <a target = "blank" href = "http://emergency.cdc.gov/disasters/earthquakes/outdoorsafety.asp"> Staying Safe Outside </a>
       </div>
     </div>
 
     <div class = "container center question" id = "eight">
-      <div class = "col-xs-12"><br>
-        <h2> What is the best position to hide in? </h2><br>
+      <div class = "col-xs-12">
+        <h2> What is the best position to hide in? </h2>
         <button class = "btn btn-default" onclick = "next('nine', 'eight', 1)"> Laying down with your hands over your face </button><br>
         <button class = "btn btn-default" onclick = "next('nine', 'eight', 0)"> On your hands and knees covering your neck and head </button><br>
         <button class = "btn btn-default" onclick = "next('nine', 'eight', 1)"> Sitting cross-legged with hands over head </button><br>
@@ -116,8 +114,8 @@
     </div>
 
     <div class = "container center question" id = "nine">
-      <div class = "col-xs-12"><br>
-        <h2> How should you get light if the power is out? </h2><br>
+      <div class = "col-xs-12">
+        <h2> How should you get light if the power is out? </h2>
         <button class = "btn btn-default" onclick = "next('ten', 'nine', 0)"> Use a flashlight </button><br>
         <button class = "btn btn-default" onclick = "next('ten', 'nine', 1)"> Light a match </button><br>
         <button class = "btn btn-default" onclick = "next('ten', 'nine', 1)"> Set off flares </button><br>
@@ -125,8 +123,8 @@
     </div>
 
     <div class = "container center question" id = "ten">
-      <div class = "col-xs-12"><br>
-        <h2>  Who should you call immediately after the shaking stops? </h2><br>
+      <div class = "col-xs-12">
+        <h2>  Who should you call immediately after the shaking stops? </h2>
         <button class = "btn btn-default" onclick = "next('eleven', 'ten', 1)"> Your family </button><br>
         <button class = "btn btn-default" onclick = "next('eleven', 'ten', 1)"> Your friends </button><br>
         <button class = "btn btn-default" onclick = "next('eleven', 'ten', 1)"> No one </button><br>
@@ -136,7 +134,7 @@
     </div>
 
     <div class = "container center question" id = "eleven">
-      <div class = "col-xs-12"><br>
+      <div class = "col-xs-12">
         <h2> What should you wear when cleaning after an earthquake? </h2><br>
         <button class = "btn btn-default" onclick = "next('twelve', 'eleven', 1)"> A hazmat suit </button><br>
         <button class = "btn btn-default" onclick = "next('twelve', 'eleven', 0)"> Long sleeves and pants with sturdy shoes </button><br>
@@ -146,7 +144,7 @@
     </div>
 
     <div class = "container center question" id = "twelve">
-      <div class = "col-xs-12"><br>
+      <div class = "col-xs-12">
         <h2> What is a utility that you should be careful when checking for damage? </h2><br>
         <button class = "btn btn-default" onclick = "next('thirteen', 'twelve', 0)"> Gas lines </button><br>
         <button class = "btn btn-default" onclick = "next('thirteen', 'twelve', 0)"> Electrical </button><br>
@@ -156,7 +154,7 @@
     </div>
 
     <div class = "container center question" id = "thirteen">
-      <div class = "col-xs-12"><br>
+      <div class = "col-xs-12">
         <h2> What is the maximum time that fridge power can be off before food is unsafe to eat? </h2><br>
         <button class = "btn btn-default" onclick = "next('finish', 'thirteen', 0)"> 4 hours </button><br>
         <button class = "btn btn-default" onclick = "next('finish', 'thirteen', 1)"> 2 hours </button><br>
@@ -170,17 +168,18 @@
       <div class = "col-xs-12">
         <br>
         <h2> Do you feel prepared? </h2>
-        <text id = "final_score"> </text>
+        <h2 id = "final_score"> </h2>
         <h2> It's important to be ready when disaster strikes, even if you think it will never happen to you. Make sure that you're ready for whatever hits and prepare for other natural disasters.</h2> <br>
 
           <button class = "btn btn-default" onclick = "start_game()"> Play Again </button>
       </div>
     </div>
 
-    <div id = "foot" style = "font-size:15px;"><text>Built for the International Women's Hackathon 2014</text><a href = "http://virtualinfinity.io"><br> by Virtual Infinity</a></div>
+    <div id = "foot" style = "font-size:15px;"><text>International Women's Hackathon 2014</text><a href = "http://virtualinfinity.io"><br> by Virtual Infinity</a></div>
   </div>
 
     <script src = "jquery-2.1.1.js"></script>
+    <script src = "jquery-ui.js"></script>
     <script src = "bootstrap.js"></script>
     <script type = "text/javascript">
       var _total = 0;

@@ -5,6 +5,10 @@
   width:100%;
   text-align:center;
 }
+#wrapper
+{
+  position:relative;
+}
 #foot
 {
   background-color:#FF8939;
@@ -31,7 +35,10 @@ button
 {
   padding-top: 10px;
   padding-bottom: 10px;
-  min-height:30px;
+  height:50px;
+  font-size:1.5rem;
+  color:#333;
+  word-wrap: break-word
 }
 
 @media (max-width: 540px) {
@@ -44,15 +51,21 @@ h1
 {
   font-family:Audiowide;
   font-size:50px;
+  color:#45332f;
 }
-
+h2
+{
+  font-size:1.5rem;
+  color:rgba(220,220,220,.9);
+}
 a
 {
   color: #520266;
+  font-size:1.5rem;
 }
 
 a:hover
 {
   color:#520266;
-  
+
 }
